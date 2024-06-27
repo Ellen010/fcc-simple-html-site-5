@@ -1,0 +1,49 @@
+<style>
+      h1, h2,p {text-align: center;
+      }
+      .Questionnaire
+         {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color:white;
+  font-size: 25px;
+}
+body {
+      background-image: url(https://www.marketbeat.com/logos/articles/med_20230516120856_how-to-calculate-stock-growth.jpg);
+      background-color: CadetBlue;
+      }
+      .line{
+    margin-top: 25px;
+    height: 10px;
+    width:auto;
+    background: linear-gradient(90deg, rgb(0, 0, 255), rgb(0,255, 150), rgb(0, 0, 255));  
+      }
+.description {
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font:Courier New;
+  font-size: 20px;
+  }
+img {
+  display: inline-block;
+margin-left:auto;
+margin-right:auto;  
+}
+/* FOOTER */
+.bottom-line{
+    margin-top: 25px;
+    height: 10px;
+    width:auto;
+    background: linear-gradient(180deg, rgb(0, 0, 255)0%, rgb(0,255, 150), rgb(0, 0, 255));  
+      }
+footer {
+  font-size: 18px;
+}
+
+.Legality {
+  margin-bottom: 10px;
+}
+    </style>
