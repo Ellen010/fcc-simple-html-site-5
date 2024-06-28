@@ -1,23 +1,36 @@
 <style>
       h1, h2,p {text-align: center;
       }
-      .Questionnaire
-         {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  color:white;
-  font-size: 25px;
+.title {
+  justify-content: center;
+      align-items: center;
+       padding: 0 auto;
 }
 body {
       background-image: url(https://www.marketbeat.com/logos/articles/med_20230516120856_how-to-calculate-stock-growth.jpg);
       background-color: CadetBlue;
+       background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color:white;
+      margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
       }
-      .line{
-    margin-top: 25px;
+.line{
+   margin-top: 25px;
     height: 10px;
     width:auto;
-    background: linear-gradient(90deg, rgb(0, 0, 255), rgb(0,255, 150), rgb(0, 0, 255));  
+    background: linear-gradient(180deg, rgb(0, 0, 255)0%, rgb(0,255, 150), rgb(0, 0, 255)); 
+      }
+    a {
+        color:#F7D772;
+        font-size: 20px;
       }
 .description {
   display: inline-block;
@@ -31,6 +44,55 @@ img {
   display: inline-block;
 margin-left:auto;
 margin-right:auto;  
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+input {
+   margin: 10px 0 0 0;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 70%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #094E87;
+  border-radius: 8px;
+  border-color: white;
+  min-width: 300px;
+}
+.bio {
+  width: 700px;
+  height: 100px;
+  margin: 1em auto;
+  padding-bottom: 1em;
+}
+.qs {
+  display: inline
+   padding: 1em;
 }
 /* FOOTER */
 .bottom-line{
