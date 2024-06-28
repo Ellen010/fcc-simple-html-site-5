@@ -10,18 +10,79 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="styles.css" rel="stylesheet"/>
       </head>
-        <h1>How do you Invest?</h1>
+        <h1 id="title" class="title">How do you Invest?</h1>
         <hr class="line">
-        <p class="description">Fill out the small survey to explore your investment options?- <a href="https://www.etrade.com">For more information click here</a></p>
-        <img src="https://www.marketbeat.com/logos/articles/med_20230516120856_how-to-calculate-stock-growth.jpg" alt="Investor image"></a>
+        <p class="description" id="description">Fill out the small survey to explore your investment options?- <a href="https://www.etrade.com">For more information click here</a></p>
+  <form method="post" id="survey-form" action='https://make-your-website.com'>
       <section>
-        <h2>Name and Last Name</h2>
+        <h2>Your personal information</h2>
         <div>
-        <input type="text" name="First Name" placeholder="First Name" required style="width:700px; height: 28px">
+        <label for="first-name" id="name-label">Enter Your First Name <input id="name" name="first-name" type="text" placeholder="First name" required style="width:700px; height: 28px" /></label>
         </div>
         <div>
-        <input type="text" name="Last Name" placeholder=" Last Name" required style="width:700px; height: 28px">
+        <label for="last-name" id="name-label">Enter Your Last Name: <input type="text" name="Last Name" placeholder=" Last Name" required style="width:700px; height: 28px"></label>
         </div>
+         <div>
+        <label for="email" id="email-label">Please enter your email<input type="email" name="Email" placeholder="Email" id="email" required style="width:700px; height: 28px"></label>
+        </div>
+         <div>
+       <label for="number" id="number-label">Please enter your phone number<input type="number" name="Phone number" placeholder="Phone number" id="number" min="7" max="13" required style="width:700px; height: 28px"></label>
+        </div>
+        <div>
+         <label for="how-often" style="width:700px; height: 28px">How often do you invest?
+         </div>
+          <select id="dropdown" name="how-often" class="dropdown" style="width:700px; height: 28px">
+            <option value="">(select one)</option>
+            <option value="1">Once in 6-9 months</option>
+            <option value="2">Once in 3-6 months</option>
+            <option value="3">Every 1-2 months</option>
+            <option value="4">Every month</option>
+            <option value="5">Multiple times month</option>
+            <option value="6">Other</option>
+          </select>
+        </label>
+         <div>
+         <label for="how-much">How much do you invest?
+          </div>
+          <select id="dropdown" name="how-much" style="width:700px; height: 28px">
+            <option value="">(select one)</option>
+            <option value="1">Less than $100</option>
+            <option value="2">Between $100 and $300</option>
+            <option value="3">Between $300 and $500</option>
+            <option value="4">Between $500 and $1000</option>
+            <option value="5">Between $1000 and $3000</option>
+            <option value="6">Between $3000 and $5000</option>
+            <option value="7">Between $5000 and $10000</option>
+            <option value="8">More than $10000</option>
+            <option value="10">Other</option>
+          </select>
+        </label>
+         <fieldset>
+           <div>
+        <legend class="qs"> Do you invest in crypto ?(required)</legend>
+        </div>
+        <label for="crypto-yes"><input id="crypto-yes" type="radio" name="crypto" value= "1" class="inline" checked /> Yes</label>
+        <label for="crypto-no"><input id="crypto-no" type="radio" name="crypto" value= "2" class="inline" /> No</label>
+      </fieldset>
+       <fieldset>
+         <div>
+        <legend class="qs"> Would you like to receive the information about your investment options? (required)</legend>
+        </div>
+        <label for="info-yes"><input id="info-yes" type="radio" name="info" value= "1" class="inline" checked /> Yes</label>
+        <label for="info-no"><input id="info-no" type="radio" name="info" value= "2" class="inline" /> No </label>
+      </fieldset>
+      <div>
+       <label for="bio" class="qs" > Questions or comments to our team </label>
+         <div>
+          <textarea id="questions-comments" name="questions-comments" class="bio" placeholder="I would like to find out more about..."></textarea>
+       <label for="terms-and-conditions">
+        <input class="inline" id="submit-info" type="checkbox" value="submit-info" required name="submit-info" /> I submit the information</a>
+      </label>
+       <input type="submit" value="Submit" />
+       <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" value="terms-and-conditions" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+       <input type="submit" id="submit" value="Submit" />
         <footer>
            <hr class="bottom-line">
 <p class="Legality">No Copyright - <a href="https://www.etrade.com">For more investment options click here</a></p>
@@ -29,4 +90,5 @@
       </section>
     </main>
     </div>
+    </form>
 </body>
