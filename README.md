@@ -6,5 +6,4 @@ Visual representation of the page:
 
 
 
-Based on FreeCodeCamp project. All credits and rights belong to https://www.freecodecamp.org/.
 
